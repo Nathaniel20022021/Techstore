@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Products | TechStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1 class="logo">TechStore</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="add-products.html" class="active">Add Product</a>
+            <a href="reports.html">Reports</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Add Product Form -->
+    <section class="add-product-section">
+        <h2>Add New Product</h2>
+        <p class="subtitle">Fill in the details below to add a new product</p>
+
+        <form class="product-form">
+
+            <!-- Product Name -->
+            <div class="form-group">
+                <label for="productName">Product Name</label>
+                <input type="text" id="productName" name="productName" placeholder="Enter product name" required>
+            </div>
+
+            <!-- Product Price -->
+            <div class="form-group">
+                <label for="productPrice">Price (GHS)</label>
+                <input type="number" id="productPrice" name="productPrice" placeholder="Enter product price" required>
+            </div>
+
+            <!-- Product Category (Radio Buttons) -->
+            <div class="form-group">
+                <label>Category</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="category" value="Laptop" required> Laptop</label>
+                    <label><input type="radio" name="category" value="Phone"> Phone</label>
+                    <label><input type="radio" name="category" value="Accessory"> Accessory</label>
+                </div>
+            </div>
+
+            <!-- Features (Checkboxes) -->
+            <div class="form-group">
+                <label>Features</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="features" value="Wireless"> Wireless</label>
+                    <label><input type="checkbox" name="features" value="Bluetooth"> Bluetooth</label>
+                    <label><input type="checkbox" name="features" value="Portable"> Portable</label>
+                </div>
+            </div>
+
+            <!-- Product Description -->
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Write a short description" rows="4" required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-submit">Add Product</button>
+        </form>
+    </section>
+
+</body>
+</html>
